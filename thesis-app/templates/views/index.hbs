@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- if you put a dot before css is referring to the relative path => without is absolute path -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" href="/img/PM2-Tester-icon.png">
+        <script src="/js/client.js"></script>
+
+        <!--jquery-toast-->
+        <script src="/js/jquery.toast.js"></script>
+        <link rel="stylesheet" href="/css/jquery.toast.css">
+    <body>
+
+        {{!-- injecting code inside the components --}}
+        <div class="main-content">
+
+            {{>header}}
+
+            <p><a class="paragraph">Use this form to get your weather!</a></p>
+
+            <br>
+            <div id="errorDiv"></div>
+            <br>
+            
+            </form id="myForm"> 
+                <input type="text" id="cityToSearch" class="input-text" placeholder="Insert the city here...">
+                <button id="searchButton" type="submit" class="btn">Search!</button>
+            </form>
+
+            <br><br><br>
+            <div id ="weather-card"></div>
+            <br>
+
+        </div>
+
+        {{>footer}}
+    </body>
+</html>
